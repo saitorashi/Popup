@@ -36,6 +36,10 @@ body {
    
   }
   
+  /* coin image popup */
+  .popup .myPopupImage {
+    visibility: hidden;
+  }
   
   
   /* hide and show the popup */
@@ -44,6 +48,7 @@ body {
     -webkit-animation: fadeIn 1s;
     animation: fadeIn 1s
   }
+  
   
   /* fade animation for popup) */
   @-webkit-keyframes fadeIn {
