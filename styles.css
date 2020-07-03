@@ -1,9 +1,11 @@
+/* Popup container */
 .popup {
     position: relative;
     display: inline-block;
     cursor: pointer;
   }
   
+  /* The actual popup (appears on top) */
   .popup .popuptext {
     visibility: hidden;
     width: 160px;
@@ -17,10 +19,10 @@
     bottom: 125%;
     left: 50%;
     margin-left: -80px;
-   
   }
   
-  .popup .popuptext::after{
+  /* Popup arrow */
+  .popup .popuptext::after {
     content: "";
     position: absolute;
     top: 100%;
@@ -31,16 +33,20 @@
     border-color: #555 transparent transparent transparent;
   }
   
+  /* Toggle this class when clicking on the popup container (hide and show the popup) */
   .popup .show {
     visibility: visible;
     -webkit-animation: fadeIn 1s;
-    animation: fadeIn 1s;
+    animation: fadeIn 1s
   }
   
+  /* Add animation (fade in the popup) */
   @-webkit-keyframes fadeIn {
     from {opacity: 0;}
-    to {opacity: 1 ;}
+    to {opacity: 1;}
   }
   
-  
-  
+  @keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity:1 ;}
+  }
